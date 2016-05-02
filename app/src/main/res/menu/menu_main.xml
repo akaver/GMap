@@ -11,8 +11,10 @@
         android:id="@+id/menu_maptype"
         android:title="@string/menu_maptype">
         <menu>
+            <group android:checkableBehavior="single">
             <item
                 android:id="@+id/menu_maptype_normal"
+                android:checked="true"
                 android:title="@string/menu_maptype_normal" />
             <item
                 android:id="@+id/menu_maptype_hybrid"
@@ -26,6 +28,7 @@
             <item
                 android:id="@+id/menu_maptype_none"
                 android:title="@string/menu_maptype_none" />
+            </group>
         </menu>
     </item>
 </menu>
